@@ -10,10 +10,11 @@ Todo
     [x] Create file based on name of website
     [x] Show that it is done
   
-  [ ] Be able to list all passwords
+  [x] Be able to list all passwords
   
   [ ] Be able to delete a specific password
   
   [ ] Be able to delete all passwords
   
-  [ ] Be able to read and show user specific passwords
+  [x] Be able to read and show user specific passwords
+

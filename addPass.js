@@ -32,6 +32,6 @@ inquirer
     var passName = answers.Password;
 
     process.chdir('Passwords');
-    fs.writeFileSync(`${fileName}.txt`, `${webName} \n ${userName} \n ${passName}`);
+    fs.writeFileSync(`${fileName}`, `${webName} \n ${userName} \n ${passName}`);
     echo("Password Added!");
   });
