@@ -1,0 +1,13 @@
+{
+  "name": "node_pass_man",
+  "version": "0.1.0",
+  "description": "A CLI Password Manager.",
+  "main": "index.js",
+  "bin": "index.js",
+  "keywords": [],
+  "author": "Aarav Hattangadi <aarav@hattangadi.com> (https://www.hattangadi.com/)",
+  "license": "MIT",
+  "dependencies": {
+    "inquirer": "^7.3.3"
+  }
+}
