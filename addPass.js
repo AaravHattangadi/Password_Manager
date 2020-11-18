@@ -23,6 +23,7 @@ inquirer
       name: "Password",
       message: "What is your password?",
       default: "",
+      mask: '*',
     },
   ])
   .then((answers) => {

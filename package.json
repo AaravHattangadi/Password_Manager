@@ -10,6 +10,7 @@
   "dependencies": {
     "inquirer": "^7.3.3",
     "node-echo": "^0.1.1",
+    "nodeshell": "0.0.5",
     "shelljs": "^0.8.4"
   }
 }
