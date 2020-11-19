@@ -15,6 +15,6 @@ inquirer
     var lookupName = answers.LookupName
 
     process.chdir('Passwords');
-    var readFileVar = fs.readFileSync(`${lookupName}`, 'utf-8');
+    var readFileVar = fs.readFileSync(`${lookupName}.apn`, 'utf-8');
     echo(`${readFileVar}`)
   });

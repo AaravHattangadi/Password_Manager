@@ -2,6 +2,9 @@ const fs = require('fs');
 const inquirer = require("inquirer");
 var echo = require('node-echo');
 
+const dir = 'Passwords'
+let cdt = new Date(); 
+
 echo("(If you have two accounts, DO NOT write the same name in this field! The first instance will be overwritten.")
 
 inquirer
@@ -32,7 +35,15 @@ inquirer
     var userName = answers.Username;
     var passName = answers.Password;
 
-    process.chdir('Passwords');
-    fs.writeFileSync(`${fileName}`, `${webName} \n ${userName} \n ${passName}`);
-    echo("Password Added!");
+    if(fs.existsSync(dir) == true) {
+      process.chdir('Passwords')
+      fs.writeFileSync(`${fileName}.apn`, `${webName} \n ${userName} \n ${passName}`);
+      echo("Password Added!");
+    } else {
+      fs.appendFileSync('errors.log',`${cdt}: 0x3731_DIR_NT_FND >> addPASS.js`)
+      echo('0x3731_DIR_NT_FND');
+      
+    }
+
+    
   });
